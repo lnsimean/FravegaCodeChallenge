@@ -14,7 +14,8 @@ public class SearchAndFilter extends BeforeAfter {
 	FilterPage filterPage;
 	ResultsSectionPage resultsSectionPage;
 	
-	@Test(priority=1, testName = "Buscar 'Heladera', y filtrar por 'Heladeras' de la marca 'Samsung'")
+	//Buscar 'Heladera', y filtrar por 'Heladeras' de la marca 'Samsung'
+	@Test(priority=1, testName = "")
 	public void searchAndFilter() throws InterruptedException {
 		
 		headerPage = new HeaderPage(driver);
