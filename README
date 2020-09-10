@@ -12,3 +12,9 @@ Si fuera necesario correrlo en Windows, habria que bajar el archivo .exe y reemp
 5) No pude mejorar el reporte que ya viene por default en testNG (test-output/emailable-report.html)
 Agregue un metodo que se podria mejorar, que toma una captura de pantalla finalizado el test, junto a la fecha de captura y el estado (PASS/FAIL)
 Podria mejorarse y capturar un elemento en particular, e incluir el nombre del test en el archivo.
+
+---------------------------
+
+Para el desafio funcional:
+
+1) Abrir el archivo "Casos de prueba.xlsx"
