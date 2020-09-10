@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -25,6 +26,10 @@ public class BeforeAfter {
 		case "chrome":
 			System.setProperty(properties.getProperty("ChromeKey"), properties.getProperty("ChromePath"));
 	        driver = new ChromeDriver();
+			break;
+		case "firefox":
+			System.setProperty(properties.getProperty("FirefoxKey"), properties.getProperty("FirefoxPath"));
+			driver = new FirefoxDriver();
 			break;
 		default:
 			System.out.println("Cannot open browser(s)");

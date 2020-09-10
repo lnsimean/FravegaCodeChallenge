@@ -13,14 +13,8 @@ public class ResultsSectionPage {
 	
 	//----------------- Elements -----------------//
 	
-	@FindBy(className = "PieceTitle-sc-1eg7yvt-0 akEoc")
-	List<WebElement> brandList;
-	
-	@FindBy(css = "li.listingDesktopstyled__TotalResult-wzwlr8-2.jPwsRI span")
-	WebElement resultsCountLabel;
-	
-	@FindBy(xpath = "//li[contains (@class,'breadcrumbstyled__ListItem-vxt6er-3')][3]/a")
-	WebElement breadCrumbLevel3Label;
+	@FindBy(xpath = "//ul[@name='itemsGrid']/li/div")
+	List<WebElement> results;
 
 	
 	//----------------- Methods -----------------//
@@ -31,19 +25,11 @@ public class ResultsSectionPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String getResultsCountLabel() {
-		return resultsCountLabel.getText();
-	}
-	
-	public String getAmmountOfResultsFromList() {
-		return String.valueOf(brandList.size());
+	public String getAmountOfResultsFromList() {
+		return String.valueOf(results.size());
 	}
 	
 	public List<WebElement> getBrandListObject() {
-		return brandList;
-	}
-
-	public String getBreadCrumbLevel3() {
-		return breadCrumbLevel3Label.getText();
+		return results;
 	}
 }
