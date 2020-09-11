@@ -4,3 +4,4 @@ evidence/
 .DS_Store
 target/
 evidence/
+.settings/
