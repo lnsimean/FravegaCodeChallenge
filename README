@@ -1,17 +1,17 @@
 Para correr el test de frontend:
 
-1) Para compilar y bajar las librerias necesarias para compilar el proyecto use maven. Las librerias estan en pom.xml
+1) Utilice Eclipse.
 
-2) Para ejecutar el proyecto, se debe correr el archivo test.xml como TestNG
+2) Use maven para bajar las librerias necesarias para compilar el proyecto. Las librerias estan en el archivo "pom.xml"
 
-3) JDK: Java SE 12
+3) Para ejecutar el proyecto, se debe correr el archivo "test.xml" como TestNG 7.3.0
 
-4) El archivo chromedriver esta en la carpeta src/resources. El mismo es para macOS.
-Si fuera necesario correrlo en Windows, habria que bajar el archivo .exe y reemplazarlo en la carpeta, y el path en src/com.fravega.properties
+4) JDK: Java SE 12
 
-5) No pude mejorar el reporte que ya viene por default en testNG (test-output/emailable-report.html)
-Agregue un metodo que se podria mejorar, que toma una captura de pantalla finalizado el test, junto a la fecha de captura y el estado (PASS/FAIL)
-Podria mejorarse y capturar un elemento en particular, e incluir el nombre del test en el archivo.
+5) El archivo chromedriver esta en la carpeta src/resources. El mismo es para macOS.
+Si fuera necesario correrlo en Windows, habria que bajar el archivo .exe y reemplazarlo en la carpeta. Habría que cambiar tambien el path en src/com.fravega.properties en ese caso.
+
+6) Para el reporte, cree la carpeta "evidence/screenshots/" donde luego de cada test se guarda una captura de pantalla con la fecha y el estado de ejecucion del test (PASS/TEST)
 
 ---------------------------
 
