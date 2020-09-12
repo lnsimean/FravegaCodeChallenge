@@ -1,6 +1,6 @@
 Para correr el test de frontend:
 
-1) Utilice Eclipse.
+1) Utilice Eclipse como entorno de desarrollo.
 
 2) Use maven para bajar las librerias necesarias para compilar el proyecto. Las librerias estan en el archivo "pom.xml"
 
@@ -12,6 +12,14 @@ Para correr el test de frontend:
 Si fuera necesario correrlo en Windows, habria que bajar el archivo .exe y reemplazarlo en la carpeta. Habría que cambiar tambien el path en src/com.fravega.properties en ese caso.
 
 6) Para el reporte, cree la carpeta "evidence/screenshots/" donde luego de cada test se guarda una captura de pantalla con la fecha y el estado de ejecucion del test (PASS/TEST)
+
+---------------------------
+
+Sobre el test de backend:
+
+La verdad solo testee APIs de manera manual, nunca hice tests automatizados de backend.
+Intente estos dias leer algo y tratar de sacarlo, pero no pude depurar el error de compilacion (com.brewery.*)
+Si puedo explicar lo que creo que deberia hacer el codigo para resolver el problema en una entrevista tecnica, y me interesaria el dia de mañana poder aprender.
 
 ---------------------------
 

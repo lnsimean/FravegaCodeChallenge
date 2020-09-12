@@ -9,7 +9,7 @@ import java.util.Properties;
 public class Reader {
 	
 	private static File archivo;
-	private static Properties properties;
+	public static Properties properties;
 	
 	public static Properties propertiesFile(String filePathName) {
 		archivo = new File(filePathName);

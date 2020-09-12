@@ -92,7 +92,5 @@ public class FilterPage {
 			}
 		}
 	}
-	
-	//Me faltaria hacer algun tipo de validacion para que en caso de que no encuentre la categoria o la marca, arroje en pantalla "No se encontro la categoria X", "No se encontro la marca X" 
-	
+		
 }
